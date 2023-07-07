@@ -41,5 +41,108 @@
       "imagen": "http://localhost:3000/Icon5.png"
     }
   ],
-  "compras": [ ]
+  "compras": [
+    {
+      "itemsId": [
+        2
+      ],
+      "id": 1
+    },
+    {
+      "itemsId": [
+        2
+      ],
+      "id": 2
+    },
+    {
+      "itemsId": [
+        2,
+        3
+      ],
+      "id": 3
+    },
+    {
+      "itemsId": [
+        2,
+        3
+      ],
+      "id": 4
+    },
+    {
+      "itemsId": [
+        3,
+        1
+      ],
+      "id": 5
+    },
+    {
+      "itemsId": [
+        3,
+        1
+      ],
+      "id": 6
+    },
+    {
+      "itemsId": [
+        3,
+        1
+      ],
+      "id": 7
+    },
+    {
+      "itemsId": [
+        3,
+        1
+      ],
+      "id": 8
+    },
+    {
+      "itemsId": [
+        3,
+        1
+      ],
+      "id": 9
+    },
+    {
+      "itemsId": [],
+      "id": 10
+    },
+    {
+      "itemsId": [],
+      "id": 11
+    },
+    {
+      "itemsId": [
+        3,
+        2
+      ],
+      "id": 12
+    },
+    {
+      "itemsId": [
+        2,
+        5
+      ],
+      "id": 13
+    },
+    {
+      "itemsId": [],
+      "id": 14
+    },
+    {
+      "itemsId": [
+        1,
+        2,
+        5
+      ],
+      "id": 15
+    },
+    {
+      "itemsId": [
+        1,
+        2
+      ],
+      "id": 16
+    }
+  ]
 }
