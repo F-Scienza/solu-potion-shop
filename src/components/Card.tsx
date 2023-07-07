@@ -25,13 +25,10 @@ const Card = (data: Product) => {
 
 	const isInCart: boolean = carrito.filter(product => product.id === id).length > 0;
 
-	if (billetera === 0) {
-		conditionalClass = 'hidden';
-	} else if (billetera < precio) {
-		conditionalClass = 'hidden';
-	} else if (isInCart) {
+	if (billetera === 0 || billetera < precio || isInCart) {
 		conditionalClass = 'hidden';
 	}
+	
 	return (
 		<div className="relative mt-6 flex w-full h-auto flex-col rounded-xl bg-black/40 bg-clip-border text-white shadow-md transition duration-300 hover:scale-105 hover:bg-black/60">
 			<div className="p-6">

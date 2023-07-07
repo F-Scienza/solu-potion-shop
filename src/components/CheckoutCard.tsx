@@ -5,17 +5,19 @@ import { Product } from '../Types';
 const CheckoutCard = (props: Product) => {
 	const context = useContext(PotionShopContext);
 	const { nombre, imagen, precio, id } = props;
-	const { carrito, setCarrito, setBilletera, billetera } = context ?? {
+	const { carrito, setCarrito, setBilletera, billetera, setItemsId } = context ?? {
 		carrito: [],
 		setCarrito: Boolean,
 		billetera: 0,
 		setBilletera: Boolean,
+		setItemsId: Boolean
 	};
 
 	const handleDelete = () => {
 		const filterProducts = carrito.filter((prod:Product) => prod.id !== id);
 		setCarrito(filterProducts);
 		setBilletera(billetera + precio);
+		setItemsId(filterProducts.map(product => product.id));
 	};
 
 	return (

@@ -28,17 +28,18 @@ export const PotionShopProvider = ({
 				setProducts(response.data);
 				setLoading(false);
 			})
-			.catch(error => console.log(error));
+			.catch(error => {
+				console.log(error);
+				setLoading(false);
+			});
 	}, []);
 
 	// post
 	const [itemsId, setItemsId] = useState<number[]>([]);
-
-	const handleCompra = () => {
+	function handleCompra() {
 		const data = {
 			itemsId,
 		};
-		console.log(data)
 		axios
 			.post('http://localhost:3001/compras', data)
 			.then(response => {
@@ -47,7 +48,7 @@ export const PotionShopProvider = ({
 			.catch(error => {
 				console.error('Error al realizar la compra:', error);
 			});
-	};
+	}
 	////
 	const contextValue: PotionShopContextInt = {
 		products,
